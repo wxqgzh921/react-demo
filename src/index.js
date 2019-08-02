@@ -12,10 +12,15 @@ import * as serviceWorker from './serviceWorker';
 //     lastname : 'per'
 // }
 // const element = (<h1>hello,{ formateName(user)}</h1>)
+// const element = React.createElement(
+//     'h2',
+//     {className:''},
+//     'hello'
+//   )
 // ReactDOM.render(element,document.getElementById('root'))
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
+setInterval(App,1000)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

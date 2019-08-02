@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -18,27 +17,24 @@ function a(user){
   return <h1>hello,world</h1>
 }
 
+function tick(){
+  const time = new Date().toLocaleTimeString()
+  return time
+}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         {/* <h1>hello,{formateName(user)}</h1> */}
         {a(user)}
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {tick()}
       </header>
     </div>
   );
 }
-
 export default App;
